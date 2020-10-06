@@ -13,7 +13,8 @@
     "lodash": "^4.17.20",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "update-electron-app": "^1.2.0"
+    "update-electron-app": "^1.2.0",
+    "use-synced-local-storage": "^1.0.2"
   },
   "devDependencies": {
     "concurrently": "4.1.2",
