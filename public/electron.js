@@ -56,6 +56,9 @@ const createWindow = () => {
       nodeIntegration: true,
     },
   });
+
+  mainWindow.setVisibleOnAllWorkspaces(true);
+
   mainWindow.loadURL(
     isDev
       ? "http://localhost:3000"
