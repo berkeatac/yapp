@@ -59,11 +59,14 @@ const createWindow = () => {
 
   mainWindow.setVisibleOnAllWorkspaces(true);
 
-  mainWindow.loadURL(
-    isDev
-      ? "http://localhost:3000"
-      : `file://${path.join(__dirname, "../build/index.html")}`
-  );
+  if (isDev) {
+    mainWindow.webContents.openDevTools({ mode: "detach" });
+    mainWindow.loadURL("http://localhost:3000");
+  } else {
+    mainWindow.loadURL(
+      `file://${path.join(__dirname, "../../build/index.html")}`
+    );
+  }
 
   // Hide the window when it loses focus
   mainWindow.on("blur", () => {

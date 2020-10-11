@@ -25,6 +25,9 @@ import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
 import ListItemText from "@material-ui/core/ListItemText";
 import Checkbox from "@material-ui/core/Checkbox";
 import CommentIcon from "@material-ui/icons/Comment";
+
+import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+
 import { useSyncedLocalStorage } from "use-synced-local-storage";
 
 const useStyles = makeStyles((theme) => ({

@@ -1,8 +1,8 @@
 {
-  "name": "cra-electron",
-  "description": "CRA + Electron sitting in a tree",
-  "author": "Kitze",
-  "version": "0.2.7",
+  "name": "Yapp",
+  "description": "To-do app living in the menubar",
+  "author": "Berke Atac",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.0",
@@ -12,6 +12,7 @@
     "electron-log": "^3.0.8",
     "lodash": "^4.17.20",
     "react": "^16.8.6",
+    "react-beautiful-dnd": "^13.0.0",
     "react-dom": "^16.8.6",
     "update-electron-app": "^1.2.0",
     "use-synced-local-storage": "^1.0.2"
